@@ -110,8 +110,7 @@
             if (username != '' && password != '') {
                 $.ajax({
                     type: 'POST',
-                    // url: baseUrl+'/v1/users/login',
-                    url: baseUrl+'/test_cors/',
+                    url: baseUrl+'/v1/users/login',
                     contentType:'application/json',
                     data: JSON.stringify(inputData),
                     success: function (result) {
